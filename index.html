@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Sistema tipográfico enxuto: Playfair Display (títulos) + Inter (todo o resto) -->
+    <!-- Playfair Display (títulos) + Inter (todo o resto) -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -20,14 +20,11 @@
                     colors: {
                         theme: {
                             base: '#F6F3EC',
-                            surface: '#ECE6DA',
-                            line: '#DED7C9',
+                            surface: '#EFEAE0',
+                            line: '#E0D9CB',
                             ink: '#141210',
-                            text: '#26241F',
+                            text: '#22201C',
                             muted: '#6B655B',
-                            accent: '#B85A34',
-                            accentDeep: '#9C4826',
-                            accentSoft: '#E4A88A',
                             gold: '#C9A24B'
                         }
                     }
@@ -36,59 +33,45 @@
         }
     </script>
     <style>
-        body { font-optical-sizing: auto; }
         .display-tight { letter-spacing: -0.015em; }
     </style>
 </head>
-<body class="bg-theme-base text-theme-text font-sans antialiased selection:bg-theme-accent selection:text-white">
+<body class="bg-theme-base text-theme-text font-sans antialiased selection:bg-theme-ink selection:text-theme-base">
 
-    <!-- [SEÇÃO 1: HERO] -->
-    <section class="pt-12 pb-16 lg:pt-24 lg:pb-28 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+    <!-- [SEÇÃO 1: HERO — só o gancho] -->
+    <section class="pt-14 pb-20 lg:pt-28 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
 
             <div class="flex flex-col items-start text-left order-1">
-                <span class="inline-flex items-center gap-2 text-theme-muted text-xs font-semibold tracking-[0.18em] uppercase mb-6">
-                    <span class="w-6 h-px bg-theme-accent"></span>
+                <span class="inline-flex items-center gap-3 text-theme-muted text-xs font-semibold tracking-[0.22em] uppercase mb-8">
+                    <span class="w-7 h-px bg-theme-ink/30"></span>
                     Rotina Assertiva
                 </span>
-                <h1 class="font-display display-tight text-5xl lg:text-7xl font-semibold leading-[1.05] mb-6 text-theme-ink">
+                <h1 class="font-display display-tight text-5xl lg:text-7xl font-semibold leading-[1.04] mb-7 text-theme-ink">
                     Pare de<br>recomeçar.
                 </h1>
-                <p class="text-lg lg:text-xl text-theme-muted mb-8 max-w-lg leading-relaxed">
-                    A estrutura invisível da constância: como sustentar metas, hábitos e resultados sem depender de motivação.
+                <p class="text-lg lg:text-xl text-theme-muted mb-10 max-w-md leading-relaxed">
+                    A estrutura invisível da constância: sustente metas, hábitos e resultados sem depender de motivação.
                 </p>
-                <div class="w-full sm:w-auto mb-8 rounded-2xl bg-theme-surface ring-1 ring-theme-line px-6 py-5">
-                    <div class="flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-theme-text">
-                        <span class="flex items-center gap-2"><span>📅</span><span class="font-medium">9 de Julho</span></span>
-                        <span class="hidden sm:block w-px h-4 bg-theme-line"></span>
-                        <span class="flex items-center gap-2"><span>🕒</span><span class="font-medium">19h</span></span>
-                        <span class="hidden sm:block w-px h-4 bg-theme-line"></span>
-                        <span class="flex items-center gap-2"><span>💻</span><span class="font-medium">Online ao vivo · Zoom</span></span>
-                    </div>
-                    <div class="mt-4 pt-4 border-t border-theme-line flex items-center gap-3">
-                        <span class="text-sm text-theme-muted">Investimento</span>
-                        <span class="font-display text-2xl font-semibold text-theme-accent">R$ 39</span>
-                    </div>
-                </div>
-                <a href="#checkout" class="group inline-flex items-center justify-center px-8 py-4 bg-theme-accent text-white text-base font-semibold rounded-full transition-all duration-200 hover:bg-theme-accentDeep hover:-translate-y-0.5 w-full sm:w-auto text-center shadow-lg shadow-theme-accent/20">
-                    Quero minha vaga
+                <a href="#checkout" class="group inline-flex items-center justify-center px-9 py-4 bg-theme-ink text-theme-base text-base font-semibold rounded-full transition-all duration-200 hover:-translate-y-0.5 hover:opacity-90 w-full sm:w-auto text-center">
+                    Quero participar
                     <span class="ml-2 transition-transform group-hover:translate-x-1">&rarr;</span>
                 </a>
             </div>
 
-            <div class="relative w-full h-[420px] lg:h-[680px] order-2 rounded-t-[5rem] shadow-2xl overflow-hidden ring-1 ring-theme-line">
+            <div class="relative w-full h-[440px] lg:h-[680px] order-2 rounded-t-[6rem] overflow-hidden">
                 <img src="mentora.jpg" alt="Mentora escrevendo" class="w-full h-full object-cover object-center bg-theme-surface">
             </div>
         </div>
     </section>
 
-    <!-- [SEÇÃO 2: A DOR E A CONEXÃO] -->
-    <section class="py-20 lg:py-28 bg-theme-ink text-theme-base">
+    <!-- [SEÇÃO 2: A DOR — fundo preto, título dourado] -->
+    <section class="py-24 lg:py-32 bg-theme-ink text-theme-base">
         <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-            <p class="font-display text-3xl lg:text-5xl font-medium leading-[1.2] text-theme-gold mb-8">
+            <p class="font-display display-tight text-3xl lg:text-5xl font-medium leading-[1.18] text-theme-gold mb-10">
                 Você sabe o que fazer.<br>Mas não consegue sustentar.
             </p>
-            <p class="text-lg lg:text-xl text-theme-base/70 leading-relaxed mb-4 max-w-xl mx-auto">
+            <p class="text-lg lg:text-xl text-theme-base/70 leading-relaxed mb-5 max-w-xl mx-auto">
                 Você cria metas, faz planos e promete que desta vez será diferente. Então perde o ritmo — não por falta de capacidade.
             </p>
             <p class="text-lg lg:text-xl text-theme-base font-medium leading-relaxed max-w-xl mx-auto">
@@ -97,67 +80,67 @@
         </div>
     </section>
 
-    <!-- [SEÇÃO 3: O QUE VOCÊ VAI APRENDER] -->
-    <section class="py-20 lg:py-32 bg-theme-base">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
-            <div class="relative w-full max-w-md mx-auto aspect-square rounded-[2.5rem] overflow-hidden shadow-2xl ring-1 ring-theme-line order-2 lg:order-1">
+    <!-- [SEÇÃO 3: O QUE VOCÊ VAI CONSTRUIR] -->
+    <section class="py-24 lg:py-36 bg-theme-base">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 lg:gap-28 items-center">
+            <div class="relative w-full max-w-md mx-auto aspect-square rounded-[2.5rem] overflow-hidden order-2 lg:order-1">
                 <img src="planner-cafe.jpg" alt="Planner e café" class="w-full h-full object-cover bg-theme-surface">
             </div>
             <div class="order-1 lg:order-2">
-                <span class="inline-flex items-center gap-2 text-theme-accent text-xs font-semibold tracking-[0.18em] uppercase mb-4">
-                    <span class="w-6 h-px bg-theme-accent"></span>
+                <span class="inline-flex items-center gap-3 text-theme-muted text-xs font-semibold tracking-[0.22em] uppercase mb-5">
+                    <span class="w-7 h-px bg-theme-ink/30"></span>
                     O conteúdo
                 </span>
-                <h2 class="font-display display-tight text-4xl lg:text-5xl font-semibold mb-8 text-theme-ink">O que você vai construir</h2>
-                <ul class="space-y-4">
-                    <li class="flex items-start gap-3 text-theme-text text-lg"><svg class="w-5 h-5 text-theme-accent flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Clareza sobre prioridades e direção</li>
-                    <li class="flex items-start gap-3 text-theme-text text-lg"><svg class="w-5 h-5 text-theme-accent flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Objetivos x Metas: a diferença que muda resultados</li>
-                    <li class="flex items-start gap-3 text-theme-text text-lg"><svg class="w-5 h-5 text-theme-accent flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Valores e escolhas pessoais</li>
-                    <li class="flex items-start gap-3 text-theme-text text-lg"><svg class="w-5 h-5 text-theme-accent flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Os ruídos que sabotam seu foco</li>
-                    <li class="flex items-start gap-3 text-theme-text text-lg"><svg class="w-5 h-5 text-theme-accent flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Como romper o ciclo da procrastinação</li>
-                    <li class="flex items-start gap-3 text-theme-text text-lg"><svg class="w-5 h-5 text-theme-accent flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Mentalização somada à ação</li>
-                    <li class="flex items-start gap-3 text-theme-text text-lg"><svg class="w-5 h-5 text-theme-accent flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Ferramentas práticas para construir constância</li>
+                <h2 class="font-display display-tight text-4xl lg:text-5xl font-semibold mb-10 text-theme-ink">O que você vai construir</h2>
+                <ul class="space-y-5">
+                    <li class="flex items-start gap-4 text-theme-text text-lg leading-snug"><svg class="w-4 h-4 text-theme-ink flex-shrink-0 mt-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Clareza sobre prioridades e direção</li>
+                    <li class="flex items-start gap-4 text-theme-text text-lg leading-snug"><svg class="w-4 h-4 text-theme-ink flex-shrink-0 mt-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Objetivos x Metas: a diferença que muda resultados</li>
+                    <li class="flex items-start gap-4 text-theme-text text-lg leading-snug"><svg class="w-4 h-4 text-theme-ink flex-shrink-0 mt-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Valores e escolhas pessoais</li>
+                    <li class="flex items-start gap-4 text-theme-text text-lg leading-snug"><svg class="w-4 h-4 text-theme-ink flex-shrink-0 mt-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Os ruídos que sabotam seu foco</li>
+                    <li class="flex items-start gap-4 text-theme-text text-lg leading-snug"><svg class="w-4 h-4 text-theme-ink flex-shrink-0 mt-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Como romper o ciclo da procrastinação</li>
+                    <li class="flex items-start gap-4 text-theme-text text-lg leading-snug"><svg class="w-4 h-4 text-theme-ink flex-shrink-0 mt-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Mentalização somada à ação</li>
+                    <li class="flex items-start gap-4 text-theme-text text-lg leading-snug"><svg class="w-4 h-4 text-theme-ink flex-shrink-0 mt-1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Ferramentas práticas para construir constância</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <!-- [SEÇÃO 4: PÚBLICO-ALVO] -->
-    <section class="py-20 lg:py-28 bg-theme-surface">
+    <section class="py-24 lg:py-32 bg-theme-surface">
         <div class="max-w-5xl mx-auto px-6 lg:px-8">
-            <div class="text-center mb-14">
-                <span class="inline-flex items-center gap-2 text-theme-accent text-xs font-semibold tracking-[0.18em] uppercase mb-4">
-                    <span class="w-6 h-px bg-theme-accent"></span>
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center gap-3 text-theme-muted text-xs font-semibold tracking-[0.22em] uppercase mb-5">
+                    <span class="w-7 h-px bg-theme-ink/30"></span>
                     Para você
-                    <span class="w-6 h-px bg-theme-accent"></span>
+                    <span class="w-7 h-px bg-theme-ink/30"></span>
                 </span>
                 <h2 class="font-display display-tight text-4xl lg:text-5xl font-semibold text-theme-ink">Para quem é esta aula</h2>
             </div>
             <div class="grid md:grid-cols-2 gap-4">
-                <div class="bg-theme-base p-6 rounded-2xl ring-1 ring-theme-line text-theme-text">Para quem vive recomeçando</div>
-                <div class="bg-theme-base p-6 rounded-2xl ring-1 ring-theme-line text-theme-text">Para quem quer mais direção e clareza</div>
-                <div class="bg-theme-base p-6 rounded-2xl ring-1 ring-theme-line text-theme-text">Para quem deseja criar hábitos sustentáveis</div>
-                <div class="bg-theme-base p-6 rounded-2xl ring-1 ring-theme-line text-theme-text">Para quem busca mais foco e menos dispersão</div>
-                <div class="md:col-span-2 bg-theme-ink p-8 rounded-2xl text-center text-theme-gold font-display text-2xl lg:text-3xl font-medium ring-1 ring-theme-gold/20">Para quem quer construir um segundo semestre intencional</div>
+                <div class="bg-theme-base p-7 rounded-2xl text-theme-text">Para quem vive recomeçando</div>
+                <div class="bg-theme-base p-7 rounded-2xl text-theme-text">Para quem quer mais direção e clareza</div>
+                <div class="bg-theme-base p-7 rounded-2xl text-theme-text">Para quem deseja criar hábitos sustentáveis</div>
+                <div class="bg-theme-base p-7 rounded-2xl text-theme-text">Para quem busca mais foco e menos dispersão</div>
+                <div class="md:col-span-2 bg-theme-ink p-10 rounded-2xl text-center text-theme-gold font-display display-tight text-2xl lg:text-3xl font-medium">Para quem quer construir um segundo semestre intencional</div>
             </div>
         </div>
     </section>
 
     <!-- [SEÇÃO 5: SOBRE O MÉTODO] -->
-    <section class="relative py-24 lg:py-32 bg-theme-base overflow-hidden border-y border-theme-line">
+    <section class="relative py-28 lg:py-36 bg-theme-base overflow-hidden border-y border-theme-line">
         <div class="absolute inset-0 flex items-center justify-center opacity-[0.04] pointer-events-none">
             <svg class="w-[520px] h-[520px] text-theme-ink" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="300" cy="300" r="240" fill="none" stroke="currentColor" stroke-width="10"/>
-                <circle cx="300" cy="300" r="160" fill="none" stroke="currentColor" stroke-width="10"/>
-                <circle cx="300" cy="300" r="80" fill="none" stroke="currentColor" stroke-width="10"/>
-                <circle cx="300" cy="300" r="26" fill="currentColor"/>
+                <circle cx="300" cy="300" r="240" fill="none" stroke="currentColor" stroke-width="8"/>
+                <circle cx="300" cy="300" r="160" fill="none" stroke="currentColor" stroke-width="8"/>
+                <circle cx="300" cy="300" r="80" fill="none" stroke="currentColor" stroke-width="8"/>
+                <circle cx="300" cy="300" r="24" fill="currentColor"/>
             </svg>
         </div>
         <div class="relative z-10 max-w-3xl mx-auto px-6 lg:px-8 text-center">
-            <span class="inline-flex items-center gap-2 text-theme-accent text-xs font-semibold tracking-[0.18em] uppercase mb-6">
-                <span class="w-6 h-px bg-theme-accent"></span>
+            <span class="inline-flex items-center gap-3 text-theme-muted text-xs font-semibold tracking-[0.22em] uppercase mb-8">
+                <span class="w-7 h-px bg-theme-ink/30"></span>
                 Sobre o método
-                <span class="w-6 h-px bg-theme-accent"></span>
+                <span class="w-7 h-px bg-theme-ink/30"></span>
             </span>
             <p class="font-display display-tight text-3xl lg:text-4xl font-medium leading-[1.25] text-theme-ink mb-8">
                 Um método de desenvolvimento pessoal focado em hábitos conscientes, clareza comportamental e estrutura de vida.
@@ -168,45 +151,43 @@
         </div>
     </section>
 
-    <!-- [SEÇÃO 6: CHECKOUT / CONTATO] -->
-    <section id="checkout" class="py-20 lg:py-28 bg-theme-ink">
+    <!-- [SEÇÃO 6: INSCRIÇÃO — data e valor aqui, no fim] -->
+    <section id="checkout" class="py-24 lg:py-32 bg-theme-ink">
         <div class="max-w-xl mx-auto px-6 lg:px-8">
-            <div class="bg-theme-base p-8 lg:p-12 shadow-2xl rounded-3xl ring-1 ring-theme-gold/25">
-                <div class="text-center mb-8">
-                    <span class="inline-flex items-center gap-2 text-theme-accent text-xs font-semibold tracking-[0.18em] uppercase mb-4">
-                        <span class="w-6 h-px bg-theme-accent"></span>
+            <div class="bg-theme-base p-8 lg:p-14 rounded-3xl">
+                <div class="text-center mb-10">
+                    <span class="inline-flex items-center gap-3 text-theme-muted text-xs font-semibold tracking-[0.22em] uppercase mb-5">
+                        <span class="w-7 h-px bg-theme-ink/30"></span>
                         Inscrição
-                        <span class="w-6 h-px bg-theme-accent"></span>
+                        <span class="w-7 h-px bg-theme-ink/30"></span>
                     </span>
-                    <h2 class="font-display display-tight text-4xl lg:text-5xl font-semibold text-theme-ink">Garanta sua vaga</h2>
-                    <p class="mt-4 text-sm lg:text-base text-theme-muted">📅 9 de Julho &nbsp;·&nbsp; 🕒 19h &nbsp;·&nbsp; 💻 Online ao vivo via Zoom</p>
+                    <h2 class="font-display display-tight text-4xl lg:text-5xl font-semibold text-theme-ink mb-5">Garanta sua vaga</h2>
+                    <p class="text-sm lg:text-base text-theme-muted">9 de julho &nbsp;·&nbsp; 19h &nbsp;·&nbsp; ao vivo no Zoom</p>
                 </div>
 
-                <div class="text-center mb-8 pb-8 border-b border-theme-line">
-                    <p class="text-sm uppercase tracking-[0.12em] text-theme-muted mb-1">Investimento</p>
-                    <span class="font-display text-5xl font-semibold text-theme-ink">R$ 39</span>
+                <div class="text-center mb-10 pb-10 border-b border-theme-line">
+                    <p class="text-xs uppercase tracking-[0.18em] text-theme-muted mb-2">Investimento</p>
+                    <span class="font-display display-tight text-6xl font-semibold text-theme-ink">R$ 39</span>
                 </div>
 
-                <p class="text-theme-muted mb-3 text-center text-sm font-semibold tracking-[0.12em] uppercase">Pagamento via cartão</p>
-                <a href="https://pay.kiwify.com.br/nSdcHGZ" target="_blank" class="group flex items-center justify-center w-full py-4 bg-theme-accent text-white font-semibold text-base rounded-full hover:bg-theme-accentDeep hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-theme-accent/20 mb-8">
+                <a href="https://pay.kiwify.com.br/nSdcHGZ" target="_blank" class="group flex items-center justify-center w-full py-4 bg-theme-ink text-theme-base font-semibold text-base rounded-full hover:-translate-y-0.5 hover:opacity-90 transition-all duration-200 mb-5">
                     Pagar com cartão
                     <span class="ml-2 transition-transform group-hover:translate-x-1">&rarr;</span>
                 </a>
 
                 <div class="bg-theme-surface p-6 rounded-2xl text-center mb-8">
-                    <p class="text-sm font-semibold uppercase tracking-[0.12em] text-theme-muted mb-3">Pix (chave)</p>
+                    <p class="text-xs font-semibold uppercase tracking-[0.14em] text-theme-muted mb-3">Ou pague via Pix</p>
                     <p class="font-display text-2xl font-semibold tracking-wide break-all text-theme-ink select-all">228.760.638-67</p>
+                    <p class="text-sm text-theme-muted mt-4">
+                        Após o pagamento, envie o comprovante para
+                        <a href="https://wa.me/5511974335478" target="_blank" class="font-semibold text-theme-ink underline underline-offset-2">(11) 97433-5478</a>
+                    </p>
                 </div>
 
-                <p class="text-theme-muted mb-8 text-center text-sm lg:text-base border-b border-theme-line pb-8">
-                    Após o pagamento, envie o comprovante para:
-                    <a href="https://wa.me/5511974335478" target="_blank" class="block mt-2 font-semibold text-theme-accent hover:text-theme-accentDeep transition-colors">+55 (11) 97433-5478</a>
-                </p>
-
-                <div class="text-sm text-theme-muted space-y-3">
-                    <div class="flex justify-between items-center"><span class="font-semibold uppercase tracking-[0.1em] text-theme-ink text-xs">E-mail</span> <a href="mailto:rotina.assertiva@gmail.com" class="hover:text-theme-accent transition-colors">rotina.assertiva@gmail.com</a></div>
-                    <div class="flex justify-between items-center"><span class="font-semibold uppercase tracking-[0.1em] text-theme-ink text-xs">Instagram</span> <a href="https://instagram.com/erikatavares_c" target="_blank" class="hover:text-theme-accent transition-colors">@erikatavares_c</a></div>
-                    <div class="flex justify-between items-center"><span class="font-semibold uppercase tracking-[0.1em] text-theme-ink text-xs">WhatsApp</span> <a href="https://wa.me/5511974335478" target="_blank" class="hover:text-theme-accent transition-colors">+55 (11) 97433-5478</a></div>
+                <div class="text-sm text-theme-muted space-y-3 pt-2">
+                    <div class="flex justify-between items-center"><span class="uppercase tracking-[0.12em] text-theme-ink text-xs font-semibold">E-mail</span> <a href="mailto:rotina.assertiva@gmail.com" class="hover:text-theme-ink transition-colors">rotina.assertiva@gmail.com</a></div>
+                    <div class="flex justify-between items-center"><span class="uppercase tracking-[0.12em] text-theme-ink text-xs font-semibold">Instagram</span> <a href="https://instagram.com/erikatavares_c" target="_blank" class="hover:text-theme-ink transition-colors">@erikatavares_c</a></div>
+                    <div class="flex justify-between items-center"><span class="uppercase tracking-[0.12em] text-theme-ink text-xs font-semibold">WhatsApp</span> <a href="https://wa.me/5511974335478" target="_blank" class="hover:text-theme-ink transition-colors">(11) 97433-5478</a></div>
                 </div>
             </div>
         </div>
