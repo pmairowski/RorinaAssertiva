@@ -22,12 +22,13 @@
                             base: '#F6F3EC',
                             surface: '#ECE6DA',
                             line: '#DED7C9',
-                            ink: '#1E2A24',
+                            ink: '#141210',
                             text: '#26241F',
                             muted: '#6B655B',
                             accent: '#B85A34',
                             accentDeep: '#9C4826',
-                            accentSoft: '#E4A88A'
+                            accentSoft: '#E4A88A',
+                            gold: '#C9A24B'
                         }
                     }
                 }
@@ -56,15 +57,23 @@
                 <p class="text-lg lg:text-xl text-theme-muted mb-8 max-w-lg leading-relaxed">
                     A estrutura invisível da constância: como sustentar metas, hábitos e resultados sem depender de motivação.
                 </p>
+                <div class="w-full sm:w-auto mb-8 rounded-2xl bg-theme-surface ring-1 ring-theme-line px-6 py-5">
+                    <div class="flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-theme-text">
+                        <span class="flex items-center gap-2"><span>📅</span><span class="font-medium">9 de Julho</span></span>
+                        <span class="hidden sm:block w-px h-4 bg-theme-line"></span>
+                        <span class="flex items-center gap-2"><span>🕒</span><span class="font-medium">19h</span></span>
+                        <span class="hidden sm:block w-px h-4 bg-theme-line"></span>
+                        <span class="flex items-center gap-2"><span>💻</span><span class="font-medium">Online ao vivo · Zoom</span></span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-theme-line flex items-center gap-3">
+                        <span class="text-sm text-theme-muted">Investimento</span>
+                        <span class="font-display text-2xl font-semibold text-theme-accent">R$ 39</span>
+                    </div>
+                </div>
                 <a href="#checkout" class="group inline-flex items-center justify-center px-8 py-4 bg-theme-accent text-white text-base font-semibold rounded-full transition-all duration-200 hover:bg-theme-accentDeep hover:-translate-y-0.5 w-full sm:w-auto text-center shadow-lg shadow-theme-accent/20">
                     Quero minha vaga
                     <span class="ml-2 transition-transform group-hover:translate-x-1">&rarr;</span>
                 </a>
-                <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mt-8 text-sm text-theme-muted">
-                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-theme-accent"></span>Ferramentas práticas</span>
-                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-theme-accent"></span>Aplicável no mesmo dia</span>
-                    <span class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-theme-accent"></span>Foco em resultados</span>
-                </div>
             </div>
 
             <div class="relative w-full h-[420px] lg:h-[680px] order-2 rounded-t-[5rem] shadow-2xl overflow-hidden ring-1 ring-theme-line">
@@ -76,13 +85,13 @@
     <!-- [SEÇÃO 2: A DOR E A CONEXÃO] -->
     <section class="py-20 lg:py-28 bg-theme-ink text-theme-base">
         <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center">
-            <p class="font-display text-3xl lg:text-5xl font-medium leading-[1.2] text-theme-base mb-8">
+            <p class="font-display text-3xl lg:text-5xl font-medium leading-[1.2] text-theme-gold mb-8">
                 Você sabe o que fazer.<br>Mas não consegue sustentar.
             </p>
             <p class="text-lg lg:text-xl text-theme-base/70 leading-relaxed mb-4 max-w-xl mx-auto">
                 Você cria metas, faz planos e promete que desta vez será diferente. Então perde o ritmo — não por falta de capacidade.
             </p>
-            <p class="text-lg lg:text-xl text-theme-accentSoft font-medium leading-relaxed max-w-xl mx-auto">
+            <p class="text-lg lg:text-xl text-theme-base font-medium leading-relaxed max-w-xl mx-auto">
                 Mas porque ainda não construiu uma estrutura capaz de sustentar suas escolhas, todos os dias.
             </p>
         </div>
@@ -129,7 +138,7 @@
                 <div class="bg-theme-base p-6 rounded-2xl ring-1 ring-theme-line text-theme-text">Para quem quer mais direção e clareza</div>
                 <div class="bg-theme-base p-6 rounded-2xl ring-1 ring-theme-line text-theme-text">Para quem deseja criar hábitos sustentáveis</div>
                 <div class="bg-theme-base p-6 rounded-2xl ring-1 ring-theme-line text-theme-text">Para quem busca mais foco e menos dispersão</div>
-                <div class="md:col-span-2 bg-theme-ink p-8 rounded-2xl text-center text-theme-base font-display text-2xl lg:text-3xl font-medium">Para quem quer construir um segundo semestre intencional</div>
+                <div class="md:col-span-2 bg-theme-ink p-8 rounded-2xl text-center text-theme-gold font-display text-2xl lg:text-3xl font-medium ring-1 ring-theme-gold/20">Para quem quer construir um segundo semestre intencional</div>
             </div>
         </div>
     </section>
@@ -162,7 +171,7 @@
     <!-- [SEÇÃO 6: CHECKOUT / CONTATO] -->
     <section id="checkout" class="py-20 lg:py-28 bg-theme-ink">
         <div class="max-w-xl mx-auto px-6 lg:px-8">
-            <div class="bg-theme-base p-8 lg:p-12 shadow-2xl rounded-3xl">
+            <div class="bg-theme-base p-8 lg:p-12 shadow-2xl rounded-3xl ring-1 ring-theme-gold/25">
                 <div class="text-center mb-8">
                     <span class="inline-flex items-center gap-2 text-theme-accent text-xs font-semibold tracking-[0.18em] uppercase mb-4">
                         <span class="w-6 h-px bg-theme-accent"></span>
@@ -170,11 +179,17 @@
                         <span class="w-6 h-px bg-theme-accent"></span>
                     </span>
                     <h2 class="font-display display-tight text-4xl lg:text-5xl font-semibold text-theme-ink">Garanta sua vaga</h2>
+                    <p class="mt-4 text-sm lg:text-base text-theme-muted">📅 9 de Julho &nbsp;·&nbsp; 🕒 19h &nbsp;·&nbsp; 💻 Online ao vivo via Zoom</p>
+                </div>
+
+                <div class="text-center mb-8 pb-8 border-b border-theme-line">
+                    <p class="text-sm uppercase tracking-[0.12em] text-theme-muted mb-1">Investimento</p>
+                    <span class="font-display text-5xl font-semibold text-theme-ink">R$ 39</span>
                 </div>
 
                 <p class="text-theme-muted mb-3 text-center text-sm font-semibold tracking-[0.12em] uppercase">Pagamento via cartão</p>
                 <a href="https://pay.kiwify.com.br/nSdcHGZ" target="_blank" class="group flex items-center justify-center w-full py-4 bg-theme-accent text-white font-semibold text-base rounded-full hover:bg-theme-accentDeep hover:-translate-y-0.5 transition-all duration-200 shadow-lg shadow-theme-accent/20 mb-8">
-                    Pagar com cartão (Kiwify)
+                    Pagar com cartão
                     <span class="ml-2 transition-transform group-hover:translate-x-1">&rarr;</span>
                 </a>
 
